@@ -52,4 +52,6 @@ Then navigate to http://localhost:8000/ to open the docs.
     + foo
 ```
 
-The reason for this bug is that `awesome-pages` tries to determine the directory where to look for the `.pages` file by determining the common subdirectory of the various sections in the nav bar. In our case this directory _should_ be the toplevel `docs/` folder. However, since `mktheapidocs` inserts the additional section "Dummy python module" whose underlying files live in the directory `dummy_python_module` which is _outside_ the docs folder, `awesome-pages` gets confused and can't find the `.pages` file any more.
+## Analysis of the bug
+
+The reason for this bug is that `awesome-pages` tries to determine the directory where to look for the `.pages` file by determining the common subdirectory of the various sections in the nav bar (see the helper methods [_gather_metadata](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin/blob/master/mkdocs_awesome_pages_plugin/navigation.py#L135-L145) and [_common_dirname](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin/blob/master/mkdocs_awesome_pages_plugin/navigation.py#L147-L152)). In our case this directory _should_ be the toplevel `docs/` folder. However, since `mktheapidocs` inserts the additional section "Dummy python module" whose underlying files live in the directory `dummy_python_module` which is _outside_ the docs folder, `awesome-pages` gets confused and can't find the `.pages` file any more.
