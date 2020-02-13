@@ -1,6 +1,8 @@
+## Bug report
+
 https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin/issues/16
 
-# To reproduce:
+## To reproduce
 
 1) Install the required dependencies.
 
