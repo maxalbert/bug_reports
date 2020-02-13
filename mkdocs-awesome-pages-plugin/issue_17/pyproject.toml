@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "issue_16"
+name = "issue_17"
 version = "0.1.0"
 description = ""
 authors = ["Maximilian Albert <maximilian.albert@gmail.com>"]

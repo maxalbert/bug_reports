@@ -1,4 +1,4 @@
-site_name: Issue 16
+site_name: Issue 17
 # theme:
 #   name: "material"
 #   include_search_page: false
@@ -25,4 +25,4 @@ plugins:
   #     modules:
   #       dummy_python_module:
   #         section: ""
-  #         source_repo: "https://github.com/maxalbert/bug_reports/tree/master/mkdocs-awesome-pages-plugin/issue_16/dummy_python_module"
+  #         source_repo: "https://github.com/maxalbert/bug_reports/tree/master/mkdocs-awesome-pages-plugin/issue_17/dummy_python_module"

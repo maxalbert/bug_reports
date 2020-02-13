@@ -1,13 +1,13 @@
 ## Bug report
 
-https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin/issues/16
+https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin/issues/17
 
 ## To reproduce
 
 1) Clone this repo and change into the appropriate subfolder.
 ```
 $ git clone https://github.com/maxalbert/bug_reports.git
-$ cd bug_reports/mkdocs-awesome-pages-plugin/issue_16/
+$ cd bug_reports/mkdocs-awesome-pages-plugin/issue_17/
 ```
 
 2) Install the required dependencies.
