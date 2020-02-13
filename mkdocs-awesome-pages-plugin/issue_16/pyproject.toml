@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "issue_16"
+version = "0.1.0"
+description = ""
+authors = ["Maximilian Albert <maximilian.albert@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+black = "^19.10b0"
+mkdocs = "^1.0.4"
+mkdocs-awesome-pages-plugin = "^2.2.0"
+mktheapidocs = "^0.1.10"
+dummy-python-module = { path = "./dummy_python_module" }
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
