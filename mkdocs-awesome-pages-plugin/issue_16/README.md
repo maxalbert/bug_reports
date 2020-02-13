@@ -2,26 +2,26 @@ https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin/issues/16
 
 # To reproduce:
 
-First install the required dependencies.
+1) Install the required dependencies.
 
-Either using `poetry`:
+If you use `poetry`, you can simply run:
 ```
 $ poetry install
 ```
 
-Or using plain pip:
+If you don't use `poetry`, you will need to install the dependencies manually via pip:
 ```
 $ pip install mkdocs mkdocs-awesome-pages-plugin mktheapidocs
+$ pip install ./dummy_python_module
 ```
 
-
-Next, serve the docs by running the following command (leave out the `poetry run` if you don't use poetry).:
+2) Next, serve the docs by running the following command (leave out the `poetry run` if you don't use poetry).:
 ```
 poetry run mkdocs serve
 ```
 Then navigate to http://localhost:8000/ to open the docs.
 
-If you check the arrangement of entries in the navigation bar, they should appear in the following, correct order (as specified by the `arrange` key in `docs/.pages`):
+3) Check that the arrangement of entries in the navigation bar is as expected. They should appear in the following order (as specified by the `arrange` key in `docs/.pages`):
 ```
 - Home
 - Tutorials
@@ -31,7 +31,7 @@ If you check the arrangement of entries in the navigation bar, they should appea
     + Running the tests
 ```
 
-However, if you uncomment the plugin `mktheapidocs` in the file `mkdocs.yml`then the order of the toplevel sections will be wrong (in particular, "Tutorials" and "How-To Guides" will be reversed):
+4) Uncomment the `mktheapidocs` section in the file `mkdocs.yml`. Then reload the docs page in your browser. Check that there is an additional section called "Dummy python module" (with API docs for the dummy python module) and that the order of the toplevel sections is now wrong - in particular, "Tutorials" and "How-To Guides" are reversed:
 ```
 - Home
 - How-To Guides
