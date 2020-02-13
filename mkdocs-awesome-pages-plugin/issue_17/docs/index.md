@@ -1,3 +1,3 @@
 # Home
 
-Nothing to see on this page.
+Placeholder for docs home page.
