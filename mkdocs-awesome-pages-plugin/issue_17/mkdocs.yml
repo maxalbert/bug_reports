@@ -1,23 +1,4 @@
 site_name: Issue 17
-# theme:
-#   name: "material"
-#   include_search_page: false
-#   search_index_only: true
-#
-#   # Default values, taken from mkdocs_theme.yml
-#   language: en
-#   feature:
-#     # Set to true to use tabs at the top, in addition to the side navbar
-#     tabs: false
-#   font:
-#     text: Roboto
-#     code: Roboto Mono
-#   palette:
-#     primary: "#095798"
-#     accent: "#2977B8"
-#   logo:
-#     # This is the default "academic hat" logo
-#     icon: "\uE80C"
 plugins:
   - awesome-pages
   # # Note: Uncomment the following lines to exhibit the buggy behaviour.
