@@ -4,7 +4,13 @@ https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin/issues/16
 
 ## To reproduce
 
-1) Install the required dependencies.
+1) Clone this repo and change into the appropriate subfolder.
+```
+$ git clone https://github.com/maxalbert/bug_reports.git
+$ cd bug_reports/mkdocs-awesome-pages-plugin/issue_16/
+```
+
+2) Install the required dependencies.
 
 If you use `poetry`, you can simply run:
 ```
@@ -17,13 +23,13 @@ $ pip install mkdocs mkdocs-awesome-pages-plugin mktheapidocs
 $ pip install ./dummy_python_module
 ```
 
-2) Next, serve the docs by running the following command (leave out the `poetry run` if you don't use poetry).:
+3) Next, serve the docs by running the following command (leave out the `poetry run` if you don't use poetry).:
 ```
 poetry run mkdocs serve
 ```
 Then navigate to http://localhost:8000/ to open the docs.
 
-3) Check that the arrangement of entries in the navigation bar is as expected. They should appear in the following order (as specified by the `arrange` key in `docs/.pages`):
+4) Check that the arrangement of entries in the navigation bar is as expected. They should appear in the following order (as specified by the `arrange` key in `docs/.pages`):
 ```
 - Home
 - Tutorials
@@ -33,7 +39,7 @@ Then navigate to http://localhost:8000/ to open the docs.
     + Running the tests
 ```
 
-4) Uncomment the `mktheapidocs` section in the file `mkdocs.yml`. Then reload the docs page in your browser. Check that there is an additional section called "Dummy python module" (with API docs for the dummy python module) and that the order of the toplevel sections is now wrong - in particular, "Tutorials" and "How-To Guides" are reversed:
+5) Uncomment the `mktheapidocs` section in the file `mkdocs.yml`. Then reload the docs page in your browser. Check that there is an additional section called "Dummy python module" (with API docs for the dummy python module) and that the order of the toplevel sections is now wrong - in particular, "Tutorials" and "How-To Guides" are reversed:
 ```
 - Home
 - How-To Guides
